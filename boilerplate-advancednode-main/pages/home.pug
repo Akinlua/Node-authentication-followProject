@@ -1,0 +1,29 @@
+html(lang="en")
+    head 
+        title= "HomePage"
+        link(rel="stylesheet", href="")
+    body
+        h3= message
+        form(action='login', method='post')
+            label Username: 
+            input(type='text', name='username')
+            label Password: 
+            input(type="password", name='password')
+            br
+            input(type="submit", value= 'Log in')
+        
+        h4= 'Register'
+        form(action='register', method='post')
+            label Username: 
+            input(type='text', name='username')
+            label Name: 
+            input(type='text', name='name')
+            label Bio: 
+            input(type='text', name='bio')
+            label Image URL: 
+            input(type='text', name='pic')
+            label Password: 
+            input(type="password", name='password')
+            br
+            input(type="submit", value= 'Sign Up')
+
